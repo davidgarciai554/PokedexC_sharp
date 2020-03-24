@@ -17,7 +17,7 @@ namespace PokedexC_sharp
         DataTable misPokemons = new DataTable();
         DataTable pokemonPorNombre = new DataTable();
 
-        int idActual = 1;
+        public static int idActual = 1;
         public VentanaPrincipal()
         {
             InitializeComponent();
@@ -49,10 +49,11 @@ namespace PokedexC_sharp
         }
         
         //Juan
-        private void setPokemonInfo(int id)
+        public void setPokemonInfo(int id)
         {
             misPokemons = miConexion.getPokemonPorId(id);
             nombrePokemon.Text = "Nombre: " + misPokemons.Rows[0]["nombre"].ToString();
+            numPokedex.Text = "Numero de Pokedex: " + misPokemons.Rows[0]["id"].ToString() + "º";
             pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + " kg";
             alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString() + " m";
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
@@ -67,7 +68,7 @@ namespace PokedexC_sharp
                 movimiento += !"".Equals(misPokemons.Rows[0]["movimiento" + i].ToString()) ? (" / " + misPokemons.Rows[0]["movimiento" + i].ToString()) : "";
             }
 
-            movimientoPokemon.Text = movimiento;
+            movimientoPokemon.Text ="Movimientos: "+ movimiento;
 
             fotoPokemon.Image = convierteBlobImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
@@ -85,6 +86,12 @@ namespace PokedexC_sharp
         private void nombrePokemon_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            findPokemon ventana = new findPokemon(this);
+            ventana.Show();
         }
     }
 }

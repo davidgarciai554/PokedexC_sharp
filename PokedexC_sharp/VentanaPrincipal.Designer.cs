@@ -32,7 +32,9 @@
             this.boton_izq = new System.Windows.Forms.Button();
             this.boton_der = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
+            this.fotoPokemon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -73,11 +75,22 @@
             this.nombrePokemon.Size = new System.Drawing.Size(115, 38);
             this.nombrePokemon.TabIndex = 3;
             // 
+            // fotoPokemon
+            // 
+            this.fotoPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fotoPokemon.Location = new System.Drawing.Point(27, 148);
+            this.fotoPokemon.Name = "fotoPokemon";
+            this.fotoPokemon.Size = new System.Drawing.Size(336, 346);
+            this.fotoPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fotoPokemon.TabIndex = 4;
+            this.fotoPokemon.TabStop = false;
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 601);
+            this.Controls.Add(this.fotoPokemon);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.boton_der);
             this.Controls.Add(this.boton_izq);
@@ -85,6 +98,7 @@
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,6 +110,7 @@
         private System.Windows.Forms.Button boton_izq;
         private System.Windows.Forms.Button boton_der;
         private System.Windows.Forms.Label nombrePokemon;
+        private System.Windows.Forms.PictureBox fotoPokemon;
     }
 }
 

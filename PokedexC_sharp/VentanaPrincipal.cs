@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,7 @@ namespace PokedexC_sharp
 
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            fotoPokemon.Image=convierteBlobImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
 
         private void boton_der_Click(object sender, EventArgs e)
@@ -37,6 +39,13 @@ namespace PokedexC_sharp
 
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            fotoPokemon.Image = convierteBlobImagen((byte[])misPokemons.Rows[0]["imagen"]);
+        }
+
+        private Image convierteBlobImagen(byte[] img)
+        {
+            MemoryStream ms = new System.IO.MemoryStream(img);
+            return (Image.FromStream(ms));
         }
     }
 }

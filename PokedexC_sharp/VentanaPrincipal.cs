@@ -15,12 +15,15 @@ namespace PokedexC_sharp
     {
         Conexion miConexion = new Conexion();
         DataTable misPokemons = new DataTable();
+        DataTable pokemonPorNombre = new DataTable();
 
         int idActual = 1;
         public VentanaPrincipal()
         {
             InitializeComponent();
             setPokemonInfo(1);
+            pokemonPorNombre = miConexion.getPokemonPorNombre("Bulbasaur");
+            Console.WriteLine(pokemonPorNombre.Rows[0]["id"].ToString());
         }
 
         private void boton_izq_Click(object sender, EventArgs e)

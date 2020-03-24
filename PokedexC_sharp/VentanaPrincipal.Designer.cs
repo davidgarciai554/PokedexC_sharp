@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.boton_izq = new System.Windows.Forms.Button();
             this.boton_der = new System.Windows.Forms.Button();
@@ -222,6 +223,7 @@
             this.Controls.Add(this.boton_der);
             this.Controls.Add(this.boton_izq);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

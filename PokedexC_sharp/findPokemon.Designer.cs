@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(findPokemon));
             this._nombrePokemon = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
@@ -77,6 +78,7 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._nombrePokemon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "findPokemon";
             this.Text = "findPokemon";
             this.ResumeLayout(false);

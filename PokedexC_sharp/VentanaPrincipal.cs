@@ -20,6 +20,7 @@ namespace PokedexC_sharp
         public VentanaPrincipal()
         {
             InitializeComponent();
+            setPokemonInfo(1);
         }
 
         private void boton_izq_Click(object sender, EventArgs e)

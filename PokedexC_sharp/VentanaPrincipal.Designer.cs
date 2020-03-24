@@ -77,6 +77,7 @@
             // 
             // nombrePokemon
             // 
+            this.nombrePokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.nombrePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombrePokemon.Location = new System.Drawing.Point(475, 173);
             this.nombrePokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -98,6 +99,7 @@
             // 
             // pesoPokemon
             // 
+            this.pesoPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.pesoPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pesoPokemon.Location = new System.Drawing.Point(475, 249);
             this.pesoPokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -109,6 +111,7 @@
             // 
             // alturaPokemon
             // 
+            this.alturaPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.alturaPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alturaPokemon.Location = new System.Drawing.Point(475, 211);
             this.alturaPokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -119,6 +122,7 @@
             // 
             // especiePokemon
             // 
+            this.especiePokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.especiePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.especiePokemon.Location = new System.Drawing.Point(475, 287);
             this.especiePokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -130,6 +134,7 @@
             // 
             // habitatPokemon
             // 
+            this.habitatPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.habitatPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habitatPokemon.Location = new System.Drawing.Point(475, 325);
             this.habitatPokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -140,6 +145,7 @@
             // 
             // tipoPokemon
             // 
+            this.tipoPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.tipoPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipoPokemon.Location = new System.Drawing.Point(475, 363);
             this.tipoPokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -150,6 +156,7 @@
             // 
             // habilidadPokemon
             // 
+            this.habilidadPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.habilidadPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habilidadPokemon.Location = new System.Drawing.Point(475, 401);
             this.habilidadPokemon.Margin = new System.Windows.Forms.Padding(3);
@@ -160,6 +167,7 @@
             // 
             // movimientoPokemon
             // 
+            this.movimientoPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.movimientoPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimientoPokemon.Location = new System.Drawing.Point(475, 439);
             this.movimientoPokemon.Margin = new System.Windows.Forms.Padding(3);

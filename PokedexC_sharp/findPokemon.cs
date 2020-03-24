@@ -23,12 +23,8 @@ namespace PokedexC_sharp
             InitializeComponent();
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.WindowsShutDown) return;
-            Application.Exit();
-          
-        }
+        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -44,6 +40,11 @@ namespace PokedexC_sharp
                 this.mainForm.setPokemonInfo(VentanaPrincipal.idActual);
                 this.Hide();
             }
+        }
+
+        private void findPokemon_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -81,6 +81,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "findPokemon";
             this.Text = "findPokemon";
+            this.Load += new System.EventHandler(this.findPokemon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

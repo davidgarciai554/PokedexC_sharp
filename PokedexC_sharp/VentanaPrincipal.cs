@@ -37,7 +37,7 @@ namespace PokedexC_sharp
         private void boton_der_Click(object sender, EventArgs e)
         {
             idActual++;
-            if (idActual >= 151) idActual = 1;
+            if (idActual >= 152) idActual = 1;
 
             setPokemonInfo(idActual);
         }

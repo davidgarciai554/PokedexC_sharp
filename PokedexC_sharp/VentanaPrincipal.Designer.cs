@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.boton_izq = new System.Windows.Forms.Button();
             this.boton_der = new System.Windows.Forms.Button();
@@ -40,12 +41,16 @@
             this.tipoPokemon = new System.Windows.Forms.Label();
             this.habilidadPokemon = new System.Windows.Forms.Label();
             this.movimientoPokemon = new System.Windows.Forms.Label();
+            this.numPokedex = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(217)))), ((int)(((byte)(223)))));
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::PokedexC_sharp.Properties.Resources.Pokedex;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -169,18 +174,43 @@
             // 
             this.movimientoPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(251)))), ((int)(((byte)(5)))));
             this.movimientoPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimientoPokemon.Location = new System.Drawing.Point(475, 439);
+            this.movimientoPokemon.Location = new System.Drawing.Point(479, 455);
             this.movimientoPokemon.Margin = new System.Windows.Forms.Padding(3);
             this.movimientoPokemon.Name = "movimientoPokemon";
-            this.movimientoPokemon.Size = new System.Drawing.Size(280, 73);
+            this.movimientoPokemon.Size = new System.Drawing.Size(276, 73);
             this.movimientoPokemon.TabIndex = 11;
             this.movimientoPokemon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // numPokedex
+            // 
+            this.numPokedex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(217)))), ((int)(((byte)(223)))));
+            this.numPokedex.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.numPokedex.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numPokedex.Location = new System.Drawing.Point(248, 74);
+            this.numPokedex.Margin = new System.Windows.Forms.Padding(3);
+            this.numPokedex.Name = "numPokedex";
+            this.numPokedex.Size = new System.Drawing.Size(105, 44);
+            this.numPokedex.TabIndex = 13;
+            this.numPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PokedexC_sharp.Properties.Resources.lupa;
+            this.pictureBox2.Location = new System.Drawing.Point(63, 499);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 601);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.numPokedex);
             this.Controls.Add(this.movimientoPokemon);
             this.Controls.Add(this.habilidadPokemon);
             this.Controls.Add(this.tipoPokemon);
@@ -193,10 +223,12 @@
             this.Controls.Add(this.boton_der);
             this.Controls.Add(this.boton_izq);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,6 +248,8 @@
         private System.Windows.Forms.Label tipoPokemon;
         private System.Windows.Forms.Label habilidadPokemon;
         private System.Windows.Forms.Label movimientoPokemon;
+        private System.Windows.Forms.Label numPokedex;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

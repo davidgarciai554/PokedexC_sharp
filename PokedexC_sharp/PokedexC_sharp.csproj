@@ -68,6 +68,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="allPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allPokemon.Designer.cs">
+      <DependentUpon>allPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="findPokemon.cs">
       <SubType>Form</SubType>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="allPokemon.resx">
+      <DependentUpon>allPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="findPokemon.resx">
       <DependentUpon>findPokemon.cs</DependentUpon>
     </EmbeddedResource>

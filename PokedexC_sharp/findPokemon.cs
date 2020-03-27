@@ -41,10 +41,5 @@ namespace PokedexC_sharp
                 this.Hide();
             }
         }
-
-        private void findPokemon_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

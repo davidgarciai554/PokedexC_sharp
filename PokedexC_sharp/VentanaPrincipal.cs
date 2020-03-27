@@ -93,5 +93,11 @@ namespace PokedexC_sharp
             findPokemon ventana = new findPokemon(this);
             ventana.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            allPokemon ventana = new allPokemon(this);
+            ventana.Show();
+        }
     }
 }

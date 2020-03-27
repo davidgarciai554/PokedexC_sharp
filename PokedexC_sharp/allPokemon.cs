@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PokedexC_sharp
-{
+{   //David
     public partial class allPokemon : Form
     {
         Conexion miConexion = new Conexion();
